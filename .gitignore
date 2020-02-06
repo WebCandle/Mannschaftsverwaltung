@@ -1,0 +1,9 @@
+#Visual Studio
+.vs/
+
+# Build results
+**/[Bb]in/
+**/[Oo]bj/
+
+#UnitTest
+TestResults/
