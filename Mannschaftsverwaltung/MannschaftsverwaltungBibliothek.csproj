@@ -41,10 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
-    <Compile Include="Modell\Person.cs" />
-    <Compile Include="Modell\Spieler.cs" />
+    <Compile Include="Bundesliga.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="FussballSpieler.cs" />
+    <Compile Include="HandballSpieler.cs" />
+    <Compile Include="Mannschaft.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Physiotherapeut.cs" />
+    <Compile Include="Spieler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TennisSpieler.cs" />
+    <Compile Include="Trainer.cs" />
+    <Compile Include="Turnier.cs" />
+    <Compile Include="Verein.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
