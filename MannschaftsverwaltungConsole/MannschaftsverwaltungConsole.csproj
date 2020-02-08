@@ -53,7 +53,7 @@
     <Folder Include="View\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mannschaftsverwaltung\MannschaftsverwaltungBibliothek.csproj">
+    <ProjectReference Include="..\MannschaftsverwaltungBibliothek\MannschaftsverwaltungBibliothek.csproj">
       <Project>{bf6d185e-d09d-416c-9dff-7820d2af8862}</Project>
       <Name>MannschaftsverwaltungBibliothek</Name>
     </ProjectReference>

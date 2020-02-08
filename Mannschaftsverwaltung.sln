@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MannschaftsverwaltungConsole", "MannschaftsverwaltungConsole\MannschaftsverwaltungConsole.csproj", "{2E5C79EA-3A75-47F9-9C30-4513497E1D8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MannschaftsverwaltungBibliothek", "Mannschaftsverwaltung\MannschaftsverwaltungBibliothek.csproj", "{BF6D185E-D09D-416C-9DFF-7820D2AF8862}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MannschaftsverwaltungBibliothek", "MannschaftsverwaltungBibliothek\MannschaftsverwaltungBibliothek.csproj", "{BF6D185E-D09D-416C-9DFF-7820D2AF8862}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
