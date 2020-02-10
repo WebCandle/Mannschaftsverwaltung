@@ -16,4 +16,11 @@ namespace Mannschaftsverwaltung
         Weiblich = 1,
         Maenlich = 2
     }
+    public enum Position
+    {
+        Stuermer = 1,
+        Verteidiger = 2,
+        Mittelfeld = 3,
+        Torwart = 4,
+    }
 }

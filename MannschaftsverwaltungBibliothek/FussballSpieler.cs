@@ -16,10 +16,12 @@ namespace Mannschaftsverwaltung
     {
         #region Eigenschaften
         private bool _Ersatzmann;
+        private Position _Position;
         #endregion
 
         #region Accessoren/Modifiers
         public bool Ersatzmann { get => _Ersatzmann; set => _Ersatzmann = value; }
+        public Position Position { get => _Position; set => _Position = value; }
         #endregion
 
         #region Konstruktorn
@@ -39,6 +41,18 @@ namespace Mannschaftsverwaltung
         #endregion
 
         #region Worker
+        public void PositionAendern(Position position)
+        {
+            Position = position;
+        }
+        public void SpielerUmtauchen()
+        {
+            Ersatzmann = !Ersatzmann;
+        }
+        public void MannschaftAendern(Mannschaft mannschaft)
+        {
+
+        }
         #endregion
     }
 }

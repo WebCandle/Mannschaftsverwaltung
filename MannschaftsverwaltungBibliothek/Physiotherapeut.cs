@@ -15,9 +15,11 @@ namespace Mannschaftsverwaltung
     public class Physiotherapeut : Person
     {
         #region Eigenschaften
+        private decimal _Gehalt;
         #endregion
 
         #region Accessoren/Modifiers
+        public decimal Gehalt { get => _Gehalt; set => _Gehalt = value; }
         #endregion
 
         #region Konstuktoren
@@ -27,11 +29,17 @@ namespace Mannschaftsverwaltung
         }
         public Physiotherapeut(Physiotherapeut physiotherapeut) : base(physiotherapeut)
         {
-
+            Gehalt = physiotherapeut.Gehalt;
         }
-        public Physiotherapeut(string name, int alt, Geschlecht geschlecht) : base(name, alt, geschlecht)
+        public Physiotherapeut(string name, int alt, Geschlecht geschlecht, decimal gehalt) : base(name, alt, geschlecht)
         {
+            Gehalt = gehalt;
+        }
+        #endregion
 
+        #region Worker
+        public void Behandel(FussballSpieler spieler)
+        {
         }
         #endregion
     }

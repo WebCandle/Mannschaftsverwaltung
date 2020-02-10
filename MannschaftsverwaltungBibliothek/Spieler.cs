@@ -37,5 +37,12 @@ namespace Mannschaftsverwaltung
             Nummer = nummer;
         }
         #endregion
+
+        #region Worker
+        public void NummerAendern(int nummer)
+        {
+            Nummer = nummer;
+        }
+        #endregion
     }
 }

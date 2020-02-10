@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Mannschaftsverwaltung.Bundesliga">
+    <Position X="3.5" Y="6" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAQAQAACAAAAAA=</HashCode>
+      <FileName>Bundesliga.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.FussballSpieler">
+    <Position X="10.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>FussballSpieler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.HandballSpieler">
+    <Position X="12.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>HandballSpieler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.Mannschaft">
+    <Position X="15.25" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgIAAAAAAAAAAAAAAAAIARAAACAAAAAAAAJAAAAAAA=</HashCode>
+      <FileName>Mannschaft.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.Person">
+    <Position X="8" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAIAwAAAAAAABAAIAAAAAAAAA=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.Physiotherapeut">
+    <Position X="6" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Physiotherapeut.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.Spieler">
+    <Position X="10.5" Y="4" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Spieler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.TennisSpieler">
+    <Position X="8.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TennisSpieler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.Trainer">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Trainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.Turnier">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEBAAAAAAAgAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Turnier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mannschaftsverwaltung.Verein">
+    <Position X="18" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAIAQAAACAAACAAAIAAAAAAAA=</HashCode>
+      <FileName>Verein.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="Mannschaftsverwaltung.Geschlecht">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Enum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

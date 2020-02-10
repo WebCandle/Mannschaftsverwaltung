@@ -48,6 +48,23 @@ namespace Mannschaftsverwaltung
         #endregion
 
         #region Worker
+        public void MannschaftZurueckZiehen(Mannschaft mannschaft)
+        {
+            Mannschaften.Add(mannschaft);
+        }
+        public void MannschaftenAufstellung()
+        {
+
+        }
+        public void MannschaftAnmelden(Mannschaft mannschaft)
+        {
+            Mannschaften.Add(mannschaft);
+        }
+        public void MannschaftAbmelden(Mannschaft mannschaft)
+        {
+            Mannschaften.Remove(mannschaft);
+        }
         #endregion
+
     }
 }

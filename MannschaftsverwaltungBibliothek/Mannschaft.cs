@@ -53,6 +53,18 @@ namespace Mannschaftsverwaltung
         #endregion
 
         #region Worker
+        public void SpielerAnnehmen(FussballSpieler spieler)
+        {
+            FussballSpielers.Add(spieler);
+        }
+        public void SpielerEntlassen(FussballSpieler spieler)
+        {
+            FussballSpielers.Remove(spieler);
+        }
+        public void VereinWechseln(Verein verein)
+        {
+
+        }
         #endregion
     }
 }
