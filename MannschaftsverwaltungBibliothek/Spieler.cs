@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Mannschaftsverwaltung
 {
-    public class Spieler : Person
+    public abstract class Spieler : Person
     {
         #region Eigenschaften
         private int _Nummer;
@@ -39,7 +39,15 @@ namespace Mannschaftsverwaltung
         #endregion
 
         #region Worker
-        public void NummerAendern(int nummer)
+        /// <summary>
+        /// Spielen muss in der abgeleiteten Klasse implementiert werden
+        /// </summary>
+        public abstract void Spielen();
+        /// <summary>
+        /// NummerAendern kann der abgeleiteten Klasse überschrieben werden, muss aber nicht!
+        /// </summary>
+        /// <param name="nummer"></param>
+        public virtual void NummerAendern(int nummer)
         {
             Nummer = nummer;
         }

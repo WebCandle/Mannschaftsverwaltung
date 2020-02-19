@@ -1,6 +1,6 @@
 ﻿#region Dateikopf
 // Datei:       Main.cs
-// Klasse:      Start
+// Klasse:      Programm
 // Datum:      06.02.2020
 #endregion
 
@@ -15,18 +15,13 @@ using Mannschaftsverwaltung;
 
 namespace MannschaftsverwaltungConsole
 {
-    class Start
+    class Programm
     {
         static void Main(string[] args)
         {
-
-            Bundesliga bundesliga = new Bundesliga();
-
-            //Speichern vom Objekt Bundesliga
-            XmlSerializer SR = new XmlSerializer(typeof(Bundesliga));
-            FileStream FS = new FileStream("Bundesliga.xml", FileMode.Create);
-            SR.Serialize(FS, bundesliga);
-            FS.Close();
+            Controller controller = new Controller();
+            controller.Run();
+            controller.Sichern();
         }
     }
 }

@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Mannschaftsverwaltung
 {
-    public class Person
+    public abstract class Person
     {
         #region Eigenschaften
         private string _Name;
