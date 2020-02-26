@@ -16,54 +16,35 @@ namespace Mannschaftsverwaltung
     {
         #region Eigenschaften
         private string _Name;
-        private Trainer _Trainer;
-        private List<Physiotherapeut> _Physiotherapeuten;
-        private List<FussballSpieler> _FussballSpielers;
+        private List<Person> _Personen;
         #endregion
 
         #region Accessoren/Modifiers
         public string Name { get => _Name; set => _Name = value; }
-        public Trainer Trainer { get => _Trainer; set => _Trainer = value; }
-        public List<Physiotherapeut> Physiotherapeuten { get => _Physiotherapeuten; set => _Physiotherapeuten = value; }
-        public List<FussballSpieler> FussballSpielers { get => _FussballSpielers; set => _FussballSpielers = value; }
+        public List<Person> Personen { get => _Personen; set => _Personen = value; }
         #endregion
 
         #region Konstruktoren
         public Mannschaft()
         {
             Name = "<Neue Mannschaft>";
-            Trainer = new Trainer();
-            Physiotherapeuten = new List<Physiotherapeut>();
-            FussballSpielers = new List<FussballSpieler>();
+            Personen = new List<Person>();
         }
-        public Mannschaft(Mannschaft mannschaft)
-        {
-            Name = mannschaft.Name;
-            Trainer = mannschaft.Trainer;
-            Physiotherapeuten = mannschaft.Physiotherapeuten;
-            FussballSpielers = mannschaft.FussballSpielers;
-        }
-        public Mannschaft(string name, Trainer trainer, List<Physiotherapeut> physiotherapeuten, List<FussballSpieler> fussballSpielers)
+        public Mannschaft(string name, List<Person> personen)
         {
             Name = name;
-            Trainer = trainer;
-            Physiotherapeuten = physiotherapeuten;
-            FussballSpielers = fussballSpielers;
+            Personen = personen;
         }
         #endregion
 
         #region Worker
-        public void SpielerAnnehmen(FussballSpieler spieler)
+        public void PersonAnnehmen(Person person)
         {
-            FussballSpielers.Add(spieler);
+            Personen.Add(person);
         }
-        public void SpielerEntlassen(FussballSpieler spieler)
+        public void PersonEntlassen(Person person)
         {
-            FussballSpielers.Remove(spieler);
-        }
-        public void VereinWechseln(Verein verein)
-        {
-
+            Personen.Remove(person);
         }
         #endregion
     }
