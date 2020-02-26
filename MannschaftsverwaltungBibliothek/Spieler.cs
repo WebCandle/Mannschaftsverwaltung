@@ -16,10 +16,12 @@ namespace Mannschaftsverwaltung
     {
         #region Eigenschaften
         private int _Nummer;
+        private int _Erfolg;
         #endregion
 
         #region Accessoren/Modifiers
         public int Nummer { get => _Nummer; set => _Nummer = value; }
+        public int Erfolg { get => _Erfolg; set => _Erfolg = value; }
         #endregion
 
         #region Konstruktoren
@@ -27,29 +29,35 @@ namespace Mannschaftsverwaltung
         {
             Nummer = 0;
             Name = "<Neuer Spieler>";
+            Erfolg = 0;
         }
         public Spieler(Spieler spieler) : base(spieler)
         {
             Nummer = spieler.Nummer;
+            Erfolg = spieler.Erfolg;
         }
-        public Spieler(string name, int alt, Geschlecht geschlecht, int nummer) : base(name,alt,geschlecht)
+        
+        public Spieler(string name, int alt, Geschlecht geschlecht, int nummer, int erfolg) : base(name,alt,geschlecht)
         {
             Nummer = nummer;
+            Erfolg = erfolg;
         }
         #endregion
 
         #region Worker
-        /// <summary>
-        /// Spielen muss in der abgeleiteten Klasse implementiert werden
-        /// </summary>
-        public abstract void Spielen();
-        /// <summary>
-        /// NummerAendern kann der abgeleiteten Klasse überschrieben werden, muss aber nicht!
-        /// </summary>
-        /// <param name="nummer"></param>
-        public virtual void NummerAendern(int nummer)
+        public int CompareByErfolg(Spieler spieler)
         {
-            Nummer = nummer;
+            if( Erfolg > spieler.Erfolg)
+            {
+                return 1;
+            } else if (Erfolg == spieler.Erfolg)
+            {
+                return 0;
+            }
+            else
+            {
+                return -1;
+            }
         }
         #endregion
     }
