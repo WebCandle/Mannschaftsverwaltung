@@ -21,7 +21,10 @@ namespace MannschaftsverwaltungConsole
         {
             Controller controller = new Controller();
             controller.Run();
-            controller.Sichern();
+            //controller.Sichern();
+
+            //Console.WriteLine( fussballSpieler.CompareByName(trainer));
+            Console.ReadKey();
         }
     }
 }

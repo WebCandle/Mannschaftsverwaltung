@@ -49,6 +49,10 @@ namespace Mannschaftsverwaltung
         {
             Spielplan = spielplan;
         }
+        public override int CompareByName(Person person)
+        {
+            return 0;
+        }
         #endregion
     }
 }

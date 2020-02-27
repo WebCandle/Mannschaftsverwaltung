@@ -16,35 +16,39 @@ namespace Mannschaftsverwaltung
     {
         #region Eigenschaften
         private string _Name;
-        private List<Person> _Personen;
+        private List<Person> _Mitglieder;
         #endregion
 
         #region Accessoren/Modifiers
         public string Name { get => _Name; set => _Name = value; }
-        public List<Person> Personen { get => _Personen; set => _Personen = value; }
+        public List<Person> Mitglieder { get => _Mitglieder; set => _Mitglieder = value; }
         #endregion
 
         #region Konstruktoren
         public Mannschaft()
         {
             Name = "<Neue Mannschaft>";
-            Personen = new List<Person>();
+            Mitglieder = new List<Person>();
         }
         public Mannschaft(string name, List<Person> personen)
         {
             Name = name;
-            Personen = personen;
+            Mitglieder = personen;
         }
         #endregion
 
         #region Worker
-        public void PersonAnnehmen(Person person)
+        public void MitgliedAnnehmen(Person person)
         {
-            Personen.Add(person);
+            Mitglieder.Add(person);
         }
-        public void PersonEntlassen(Person person)
+        public void MitgliedEntlassen(Person person)
         {
-            Personen.Remove(person);
+            Mitglieder.Remove(person);
+        }
+        public void SortMitgliederByName()
+        {
+
         }
         #endregion
     }

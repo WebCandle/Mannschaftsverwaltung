@@ -59,6 +59,10 @@ namespace Mannschaftsverwaltung
                 return -1;
             }
         }
+        public override int CompareByName(Person person)
+        {
+            return string.Compare(Name, person.Name);
+        }
         #endregion
     }
 }

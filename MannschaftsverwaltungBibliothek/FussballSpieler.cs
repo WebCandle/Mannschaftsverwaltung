@@ -34,7 +34,7 @@ namespace Mannschaftsverwaltung
         {
             Ersatzmann = fussballSpieler.Ersatzmann;
         }
-        public FussballSpieler(string name, int alt, Geschlecht geschlecht, int nummer, bool ersatzmann) : base(name, alt, geschlecht,nummer)
+        public FussballSpieler(string name, int alt, Geschlecht geschlecht, int nummer, bool ersatzmann,int erfolg) : base(name, alt, geschlecht,nummer,erfolg)
         {
             Ersatzmann = ersatzmann;
         }

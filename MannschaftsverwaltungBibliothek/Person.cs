@@ -48,6 +48,7 @@ namespace Mannschaftsverwaltung
         #endregion
 
         #region Worker
+        public abstract int CompareByName( Person person);
         #endregion
     }
 }

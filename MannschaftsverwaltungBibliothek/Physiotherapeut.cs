@@ -41,6 +41,10 @@ namespace Mannschaftsverwaltung
         public void Behandel(FussballSpieler spieler)
         {
         }
+        public override int CompareByName(Person person)
+        {
+            return 0;
+        }
         #endregion
     }
 }

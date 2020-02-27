@@ -31,7 +31,7 @@ namespace Mannschaftsverwaltung
         {
 
         }
-        public TennisSpieler(string name, int alt, Geschlecht geschlecht, int nummer) : base(name, alt, geschlecht, nummer)
+        public TennisSpieler(string name, int alt, Geschlecht geschlecht, int nummer,int erfolg) : base(name, alt, geschlecht, nummer,erfolg)
         {
 
         }
