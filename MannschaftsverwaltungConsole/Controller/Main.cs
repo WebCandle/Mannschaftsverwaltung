@@ -23,7 +23,6 @@ namespace MannschaftsverwaltungConsole
             controller.Run();
             //controller.Sichern();
 
-            //Console.WriteLine( fussballSpieler.CompareByName(trainer));
             Console.ReadKey();
         }
     }

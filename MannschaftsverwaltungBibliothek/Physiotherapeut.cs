@@ -43,7 +43,7 @@ namespace Mannschaftsverwaltung
         }
         public override int CompareByName(Person person)
         {
-            return 0;
+            return string.Compare(Name, person.Name);
         }
         #endregion
     }

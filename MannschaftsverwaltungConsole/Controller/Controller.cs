@@ -19,20 +19,32 @@ namespace MannschaftsverwaltungConsole
         public Controller()
         {
             Mannschaft mannschaft = new Mannschaft();
-            Trainer trainer = new Trainer();
-            FussballSpieler fussballSpieler = new FussballSpieler();
-            mannschaft.MitgliedAnnehmen(trainer);
-            mannschaft.MitgliedAnnehmen(fussballSpieler);
+            Trainer trainer1 = new Trainer();
+            trainer1.Name = "Maher Al Abbasi";
+            mannschaft.MitgliedAnnehmen(trainer1);
+
+            Physiotherapeut physio1 = new Physiotherapeut();
+            physio1.Name = "Wolfgang Stupp";
+            mannschaft.MitgliedAnnehmen(physio1);
+
+            FussballSpieler fussballSpieler1 = new FussballSpieler();
+            fussballSpieler1.Name = "Lional Messi";
+            mannschaft.MitgliedAnnehmen(fussballSpieler1);
+
+            FussballSpieler fussballSpieler2 = new FussballSpieler();
+            fussballSpieler2.Name = "Ronaldo";
+            mannschaft.MitgliedAnnehmen(fussballSpieler2);
 
             Verein verein = new Verein();
             verein.MannschaftAnmelden(mannschaft);
-            Bundesliga = new Bundesliga("Deutschland", DateTime.Now, new List<Verein>() { verein }, DateTime.Now);
+            Bundesliga = new Bundesliga("Deutschland", DateTime.Now, new List<Verein>(), DateTime.Now);
+            Bundesliga.VereinAnmelden(verein);
 
             
         }
         public void Run()
         {
-            Terminal.ManschaftsmitgliederAnzeigen(Bundesliga.Vereine.ElementAt(0).Mannschaften.ElementAt(0));
+            Terminal.ManschaftsmitgliederAnzeigen(Bundesliga.Vereine.First().Mannschaften.First());
         }
         public void Sichern()
         {

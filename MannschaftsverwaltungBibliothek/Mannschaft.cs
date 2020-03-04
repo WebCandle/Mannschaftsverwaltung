@@ -48,7 +48,26 @@ namespace Mannschaftsverwaltung
         }
         public void SortMitgliederByName()
         {
+            bool PaarSortiert;
+            do
+            {
+                PaarSortiert = true;
+                for (int i = 0; i < Mitglieder.Count - 1; i++)
+                {
+                    if (Mitglieder.ElementAt(i).CompareByName(Mitglieder.ElementAt(i + 1)) == 1)
+                    {
 
+                        //zahlen tauschen (nur ein Paar)
+                        Person temp = Mitglieder.ElementAt(i);
+                        Mitglieder.Insert(i, Mitglieder.ElementAt(i + 1));
+                        Mitglieder.Insert(i + 1,temp);
+
+                        //nicht sortiert
+                        PaarSortiert = false;
+                    }
+                }
+
+            } while (!PaarSortiert);
         }
         #endregion
     }
