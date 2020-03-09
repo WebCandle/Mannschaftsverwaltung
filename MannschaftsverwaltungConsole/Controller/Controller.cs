@@ -18,21 +18,26 @@ namespace MannschaftsverwaltungConsole
 
         public Controller()
         {
+            Terminal = new Terminal();
             Mannschaft mannschaft = new Mannschaft();
             Trainer trainer1 = new Trainer();
             trainer1.Name = "Maher Al Abbasi";
+            trainer1.Alt = 55;
             mannschaft.MitgliedAnnehmen(trainer1);
 
             Physiotherapeut physio1 = new Physiotherapeut();
             physio1.Name = "Wolfgang Stupp";
+            physio1.Alt = 60;
             mannschaft.MitgliedAnnehmen(physio1);
 
             FussballSpieler fussballSpieler1 = new FussballSpieler();
             fussballSpieler1.Name = "Lional Messi";
+            fussballSpieler1.Alt = 22;
             mannschaft.MitgliedAnnehmen(fussballSpieler1);
 
             FussballSpieler fussballSpieler2 = new FussballSpieler();
             fussballSpieler2.Name = "Ronaldo";
+            fussballSpieler2.Alt = 20;
             mannschaft.MitgliedAnnehmen(fussballSpieler2);
 
             Verein verein = new Verein();
@@ -44,6 +49,10 @@ namespace MannschaftsverwaltungConsole
         }
         public void Run()
         {
+            Console.WriteLine("Unsortiert:");
+            Terminal.ManschaftsmitgliederAnzeigen(Bundesliga.Vereine.First().Mannschaften.First());
+            Bundesliga.Vereine.First().Mannschaften.First().SortMitgliederByName();
+            Console.WriteLine("Sortiert nach Name:");
             Terminal.ManschaftsmitgliederAnzeigen(Bundesliga.Vereine.First().Mannschaften.First());
         }
         public void Sichern()

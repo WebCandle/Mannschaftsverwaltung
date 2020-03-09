@@ -16,7 +16,8 @@ namespace MannschaftsverwaltungConsole
             foreach (var item in mannschaft.Mitglieder)
             {
                 string typ = item.GetType().ToString();
-                table.AddRow(item.Name, item.Alt.ToString(), typ);
+                var t = typ.Split('.');
+                table.AddRow(item.Name, item.Alt.ToString(), t[1]);
             }
             Console.WriteLine(table.ToString());
         }
