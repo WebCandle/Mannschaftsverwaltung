@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MannschaftsverwaltungConsole", "MannschaftsverwaltungConsole\MannschaftsverwaltungConsole.csproj", "{2E5C79EA-3A75-47F9-9C30-4513497E1D8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MannschaftsverwaltungBibliothek", "MannschaftsverwaltungBibliothek\MannschaftsverwaltungBibliothek.csproj", "{BF6D185E-D09D-416C-9DFF-7820D2AF8862}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MannschaftsverwaltungASP", "MannschaftsverwaltungASP\MannschaftsverwaltungASP.csproj", "{0AE25158-2DA1-43FC-A784-5481334981E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BF6D185E-D09D-416C-9DFF-7820D2AF8862}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF6D185E-D09D-416C-9DFF-7820D2AF8862}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF6D185E-D09D-416C-9DFF-7820D2AF8862}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AE25158-2DA1-43FC-A784-5481334981E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE25158-2DA1-43FC-A784-5481334981E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE25158-2DA1-43FC-A784-5481334981E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE25158-2DA1-43FC-A784-5481334981E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
